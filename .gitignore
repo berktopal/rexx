@@ -46,3 +46,6 @@ app.*.map.json
 
 # Sensitive config files
 android/app/google-services.json
+
+# Node (Firebase JS SDK kurulumundan kalan)
+node_modules/
