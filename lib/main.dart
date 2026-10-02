@@ -455,6 +455,13 @@ class ShoeCard extends StatelessWidget {
             shoe.imageUrl,
             height: 80,
             fit: BoxFit.cover,
+            // Görsel yüklenemezse (ağ hatası / servis kapalı) kırık görsel yerine yer tutucu göster
+            errorBuilder: (context, error, stackTrace) => Container(
+              height: 80,
+              color: Colors.grey.shade200,
+              alignment: Alignment.center,
+              child: Icon(Icons.image_not_supported_outlined, color: Colors.grey.shade500),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.all(8),
