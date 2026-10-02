@@ -1,5 +1,5 @@
 name: flutter_application_1
-description: "A new Flutter project."
+description: "REXX - Flutter sneaker store demo with Firebase Authentication."
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -24,6 +24,5 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/rexx_logo.png
-    - assets/images/shoes/
 
     
